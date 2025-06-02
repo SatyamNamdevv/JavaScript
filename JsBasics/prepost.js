@@ -9,7 +9,7 @@
 let a = 3;
 const b = ++a;
 
-console.log(`a:${a}, b:${b}`);
+console.log(`a:${a}, b${b}`);
 // Expected output: "a:4, b:4"
 let x = 10;
 console.log(++x);
