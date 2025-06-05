@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>BMI Calculator</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f1f1f1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .container {
+      background-color: white;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      width: 320px;
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    label {
+      display: block;
+      margin: 10px 0 5px;
+    }
+
+    input {
+      width: 100%;
+      padding: 8px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    button {
+      margin-top: 15px;
+      width: 100%;
+      padding: 10px;
+      background-color: #0077cc;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #005fa3;
+    }
+
+    #results {
+      margin-top: 20px;
+      text-align: center;
+      font-weight: bold;
+      font-size: 1.2rem;
+      color: #333;
+    }
+
+    /* Static BMI Category Table */
+    .bmi-chart {
+      margin-top: 30px;
+      padding: 15px 20px;
+      background-color: #f7f7f7;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      font-size: 0.95rem;
+      color: #444;
+    }
+
+    .bmi-chart h3 {
+      text-align: center;
+      margin-bottom: 10px;
+      font-size: 1.1rem;
+      color: #0077cc;
+    }
+
+    .bmi-chart table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 10px;
+      font-size: 0.95rem;
+    }
+
+    .bmi-chart th,
+    .bmi-chart td {
+      text-align: left;
+      padding: 8px;
+      border-bottom: 1px solid #ddd;
+    }
+
+    .bmi-chart th {
+      background-color: #e6f0fa;
+      color: #0077cc;
+    }
+
+    .bmi-chart tr:last-child td {
+      border-bottom: none;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>BMI Calculator</h1>
+    <form>
+      <label for="height">Height (cm):</label>
+      <input type="number" id="height" placeholder="e.g. 170" required />
+
+      <label for="weight">Weight (kg):</label>
+      <input type="number" id="weight" placeholder="e.g. 65" required />
+
+      <button type="submit">Calculate BMI</button>
+    </form>
+
+    <div id="results"></div>
+
+    <!-- Static BMI Reference Table -->
+    <div class="bmi-chart">
+      <h3>BMI Categories</h3>
+      <table>
+        <thead>
+          <tr>
+            <th>Category</th>
+            <th>BMI Range</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Underweight</td>
+            <td>Less than 18.5</td>
+          </tr>
+          <tr>
+            <td>Normal weight</td>
+            <td>18.5 – 24.9</td>
+          </tr>
+          <tr>
+            <td>Overweight</td>
+            <td>25 – 29.9</td>
+          </tr>
+          <tr>
+            <td>Obese</td>
+            <td>30 and above</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  </body>
+  <script src="bmiCalculator.js"></script>
+  </html>
