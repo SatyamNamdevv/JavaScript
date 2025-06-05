@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color Changer</title>
+     <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      padding: 50px;
+      transition: background-color 0.3s ease;
+    }
+
+    nav {
+      margin-bottom: 20px;
+    }
+
+    nav a {
+      margin: 0 10px;
+      text-decoration: none;
+      color: #0077b6;
+    }
+
+    .canvas h1 {
+      margin-bottom: 20px;
+    }
+
+    .button {
+      display: inline-block;
+      height: 60px;
+      width: 60px;
+      margin: 10px;
+      border: 2px solid black;
+      cursor: pointer;
+      border-radius: 8px;
+    }
+
+    #grey {
+      background-color: grey;
+    }
+
+    #white {
+      background-color: white;
+      border: 2px solid #ccc;
+    }
+
+    #blue {
+      background-color: blue;
+    }
+
+    #yellow {
+      background-color: yellow;
+    }
+  </style>
+</head>
+<body>
+    <nav>
+        <a href="/">Home</a>
+        <a target = "_blank" href="">Linkedin</a>
+    </nav>
+    <div class="canvas">
+        <h1>Color Changer</h1>
+        <span class="button" id="grey"></span>
+        <span class="button" id="white"></span>
+        <span class="button" id="blue"></span>
+        <span class="button" id="yellow"></span>
+<h2>
+    Click on any Button you like!
+    <span>to change to respective color</span>
+</h2>
+
+    </div>
+</body>
+<script src="colorchanger.js"></script>
+</html>
